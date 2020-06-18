@@ -30,7 +30,6 @@ def destroy
   blog.destroy
   redirect_to blogs_path
 end
-  end
   private
   def blog_params
     params.require(:blog).permit(:title, :category, :body)
